@@ -11,6 +11,10 @@
                     <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                     Customers
                 </a>
+                <a class="nav-link" href="{{route('bars.index')}}">
+                    <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    Progress Bar
+                </a>
 
                 <a class="nav-link" href="{{route('products.index')}}">
                     <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>

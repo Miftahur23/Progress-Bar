@@ -19,7 +19,7 @@ class UsersTableSeeder extends Seeder
             'name'=>'sara',
             'email'=>'sara@gmail.com',
             'password'=>bcrypt('sara123'),
-            'role_id'=>1,
+            'completed'=>1,
 
         ]);
     }

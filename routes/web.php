@@ -2,10 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\BarController;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\admin\HomeController;
-use App\Http\Controllers\admin\RoleController;
 // use App\Http\Controllers\admin\AdminController;
+use App\Http\Controllers\admin\RoleController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\admin\CauseController;
 use App\Http\Controllers\admin\DonorController;
@@ -41,6 +42,8 @@ Route::post('admin/reset-password','resetPasswordPost')->name('admin.reset.passw
 
 });
 Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
+
+Route::resource('bars', BarController::class);
 
 
 Route::get('/home', [AdminController::class, 'index'])->name('index');
